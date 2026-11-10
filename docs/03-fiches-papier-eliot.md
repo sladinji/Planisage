@@ -2,7 +2,9 @@
 
 Le classeur actuel, que Planisage doit remplacer : une **fiche client** imprimée qui sert de contrat, suivie d'un **tableau d'interventions** rempli à la main (Date · Interventions · Temps · À prévoir prochaine intervention).
 
-Source : 6 photos du 30/09/2026 (`photos/`). Les passages incertains sont marqués `?`. On ne sait pas à quel client appartiennent les tableaux : la piscine fait penser à l'Hôtel des Charmes, sans certitude.
+Source : photos des 20/09 et 30/09/2026 (`photos/`, non versionné). Les passages incertains sont marqués `?`. Les quatre premières pages de tableau sont celles de l'**Hôtel des Charmes** : la page du carnet de terrain du 26/08 (§5) le confirme.
+
+**Le circuit réel a trois supports** : le carnet de terrain (brouillon du jour, §5) → le tableau du classeur (recopié) → la fiche chantier pour les travaux ponctuels (§5). Planisage doit supprimer la recopie.
 
 Ce fichier sert à la fois de **jeu de données de test** pour le POC et de **source du vocabulaire** pour la saisie du compte-rendu (écran M04, voir [conception](02-conception-poc.md)).
 
@@ -27,6 +29,29 @@ Travaux communs aux deux fiches :
 - ramassage des feuilles mortes, par semaine.
 
 Observation (les deux fiches) : *type et nombre de piles à noter lors du premier hivernage.*
+
+### Willot (particulier)
+
+Benoît Willot, 31 rue de Belle Vue, 21121 Fontaine-lès-Dijon. Téléphone non renseigné.
+
+| Travaux | Fréquence |
+|---|---|
+| Tonte | **quand il y en a besoin, toute l'année** (hauteur 3 ou 4) |
+| Taille de la haie, 3 faces | à l'automne |
+| Taille des arbustes | suivant la floraison |
+| Taille buis et topiaires | 2 à 3 fois par an |
+| Ramassage des feuilles | 1 fois par semaine |
+| Soufflage | à chaque passage |
+| Massifs : désherbage, soufflage, fleurs fanées | — |
+| Aires inertes (brûleur thermique) : allée gravier + pétanque | — |
+| Brossage du synthétique | 1 fois par an |
+| Réseaux goutte-à-goutte : mise en route et hivernage | saisonnier |
+| Nettoyage des poubelles + désinfectant | 2 à 3 fois par an |
+| Entretien complet du bassin (épuisette + nettoyage filtre) ; mise en route et hivernage | 1 fois par semaine |
+
+Observations : **le code d'accès est écrit en clair sur la fiche** (masqué ici), suivi de l'inventaire des piles : 1 × 9V 6LR61, 2 × AA LR6, 4 × AAA LR03. Une rubrique « Accès chantier » existe en bas de fiche.
+
+C'est l'exemple type du **quota indicatif** (réponse 2.1) : tonte « quand il y en a besoin », sur toute l'année. Les piles, elles, forment un inventaire par site à garder (programmateurs, lampe UV du bassin, bip pour chat).
 
 ## 2. Tableau des interventions
 
@@ -84,6 +109,24 @@ Sur cette page, l'alignement de la colonne Temps est approximatif (10h et 6h45 s
 | 16/09 | Désherbage général, tonte et abords, ramassage feuilles, taille, palissage, souffleur | 9h |
 | 23/09 | Tonte, désherbage, souffleur, petite taille, palissage | 9h |
 
+### Willot — mars à avril
+
+Photo prise de travers : l'alignement des temps avec les lignes est incertain.
+
+| Date | Interventions | Temps | À prévoir |
+|---|---|---|---|
+| 05/03 | Souffleur, ratissage du gravier de toute la zone, désherbage (zone grande allée) | 6h | |
+| 10/03 | Nettoyage murs, tonte, souffleur, désherbage | 8h | |
+| 24/03 | Souffleur, désherbage, plantation photinia, copeaux (?) | 6h | |
+| 02/04 | Tonte, désherbage, taille romarin + sauge, nettoyage gouttière + bassin, souffleur | 6h | Prévoir 3 m³ de copeaux |
+| 09/04 | Tonte, désherbage, plantation sauge + euphorbe, copeaux (?), souffleur | 3h | Taille sureau à l'entrée (échelle ?) |
+| 16/04 | Tonte, désherbage, souffleur | 5h30 | |
+| 20/04 | Mise en route bassin | 6h | 20 mai : optifond (?) local rouge ; brancher la lampe UV + pile AAA ⚠ ; faire plantation (plante morte + pot) |
+| 23/04 | Tonte, désherbage, mise en place paillage, arrosage plantes en pot + photinia, soufflage | 5h (raturé) | |
+| 30/04 | Tonte, mise en route arrosage auto, désherbage massifs, allées, souffleur, remplissage (?), nettoyage filtre bassin | 3h | |
+
+Le « à prévoir » du 20/04 est **daté** (« 20 mai ») et porte un **matériel** (pile AAA) : c'est un rappel à une date plus qu'une note pour le passage suivant.
+
 ## 3. Vocabulaire des interventions
 
 Relevé sur les 32 lignes ci-dessus, du plus fréquent au plus rare (fréquences approximatives). C'est la base des suggestions de saisie.
@@ -113,6 +156,10 @@ Relevé sur les 32 lignes ci-dessus, du plus fréquent au plus rare (fréquences
 **Matériel et incidents**
 - Panne pompe / résolution pompe
 - Programmateur : mise en place, contrôle et réglage de l'arrosage automatique
+- Bassin : mise en route, hivernage, nettoyage filtre
+- Changement de piles (programmateur, lampe UV, bip pour chat)
+
+**Ajouts du site Willot** : ratissage gravier, nettoyage murs, nettoyage gouttière, taille romarin / sauge / sureau / topiaire / cyprès, plantation photinia / sauge / euphorbe, entretien terrain de pétanque.
 
 Structure récurrente d'une ligne : **action + objet (végétal ou lieu) + quantité éventuelle**. Exemples : « taille + rosiers », « arrosage + plantes en pot », « copeaux + 4 m³ ».
 
@@ -127,3 +174,37 @@ Structure récurrente d'une ligne : **action + objet (végétal ou lieu) + quant
 5. **« À prévoir » devient une tâche** reportée sur la prochaine intervention du site, à cocher une fois faite. Aujourd'hui, Eliot écrit « fait le 08/04 » après coup.
 6. **Saisir le temps en personnes × durée.** Des valeurs comme 16h ou 21h en une journée sont forcément des heures cumulées de l'équipe. Il faut le confirmer avec Eliot.
 7. **Suivre les quotas du contrat.** Les puces liées au contrat (copeaux en m³, saturateur, engrais, brossage du synthétique) alimentent un compteur « réalisé / prévu sur l'année ».
+
+## 5. Autres documents du terrain
+
+### Carnet de terrain
+
+Un cahier d'écolier, une page par passage, rempli sur place puis **recopié dans le tableau du classeur**. Exemple :
+
+> **Design Paysage — 26/08/26 — Les Charmes**
+> Scarification + semis + apport compost · Désherbage · Taille lierre muret · Arrosage plantes en pot · Désherbage · Taille fleurs fanées rosiers · Ramassage feuilles · Souffleur
+
+On y lit, par transparence, la page suivante : *27/08, Willot : taille de la topiaire, cyprès, souffleur, entretien du terrain de pétanque, changement des piles (bip pour chat).*
+
+Ce que ça montre :
+- le carnet n'a **pas de temps** : il est ajouté au moment de la recopie ;
+- c'est déjà une **liste d'actions à puces**, la forme que doit prendre M04 ;
+- la ligne du 26/08 du tableau reprend ce carnet mot pour mot : la recopie est une double saisie pure.
+
+### Fiche chantier (travaux ponctuels, sur devis)
+
+Formulaire imprimé distinct de la fiche client, pour une intervention hors contrat :
+
+| Champ | Exemple |
+|---|---|
+| Devis n° | vide |
+| Date et heure | vendredi 18 septembre, 8h |
+| Adresse | 8 rue du Nord |
+| Donneur d'ordre, téléphone | M. Esteve (numéro masqué ici) |
+| Temps travaux | vide |
+| **Matériel** (cases à cocher) | 150, 026, cônes et panneaux, broyeur, échenilloir, **échelle** ☑, brouette, kit grimpe, taille-haie, échafaudage, tondeuse, sécateur de force, taille-haie perche, tronçonneuse perche, débroussailleuse, rampes |
+| Travaux à réaliser | taille des végétaux (grimpantes), soufflage du patio |
+
+Ce que ça montre :
+- il existe des **clients ponctuels**, sans contrat ni fiche client, rattachés à un devis : c'est P04 (tâche hors contrat) ;
+- la **liste du matériel à charger** fait partie de la préparation d'une intervention. Elle n'est pas dans le POC. On la retrouve aussi dans les « à prévoir » (échelle, pile AAA).
